@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /Lilith/appTest/system/
+RewriteRule ^(.+)_*(\d+)*\.(js|css|png|jpg|gif|ogg|mp3|woff2|woff|ttf)$ $1.$3 [L]
+RewriteRule ^ App.php [QSA,L]

@@ -1,0 +1,5 @@
+
+RewriteEngine On
+RewriteBase /lilith/res/html
+RewriteRule ^(.+)_*(\d+)*\.(js|css|png|jpg|gif|ogg|mp3|woff2|woff|ttf)$ $1.$3 [L]
+RewriteRule ^ lilith.html [QSA,L]
